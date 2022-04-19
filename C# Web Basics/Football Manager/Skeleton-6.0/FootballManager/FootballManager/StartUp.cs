@@ -20,6 +20,7 @@
             server.ServiceCollection
                 .Add<FootballManagerDbContext>()
                 .Add<IRepository , Repository>()
+                .Add<IDestinationService , Repository>()
                 .Add<IUserService , UserService>()
                 .Add<IPlayerService , PlayerService>();
             
